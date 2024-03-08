@@ -18,6 +18,9 @@ const config: Config = {
         secondary: '#4F5665',
         black: '#0B132A',
       },
+      boxShadow: {
+        button: '0 20px 40px 0px rgba(245, 56, 56, 0.3)',
+      },
     },
   },
   plugins: [],
