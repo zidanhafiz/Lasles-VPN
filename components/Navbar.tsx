@@ -29,7 +29,12 @@ const Navbar = () => {
     <nav className='grid grid-cols-[233px,1fr,233px] items-center max-w-6xl mx-auto py-11 px-2'>
       <div className='justify-self-start'>
         <Link href='/'>
-          <Image src='/logo.jpg' width={150} height={150} alt='lasles vpn' />
+          <Image
+            src='/hero/logo.jpg'
+            width={150}
+            height={150}
+            alt='lasles vpn'
+          />
         </Link>
       </div>
       <div>
