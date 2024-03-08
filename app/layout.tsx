@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
-import { Inter, Rubik } from 'next/font/google';
+import { Rubik } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
-const rubix = Rubik({ weight: ['300', '400', '500', '600', '800'], subsets: ['latin'] });
+const rubix = Rubik({
+  weight: ['300', '400', '500', '600', '800'],
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: 'Lasles VPN',
