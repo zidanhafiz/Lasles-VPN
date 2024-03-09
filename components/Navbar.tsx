@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from './Button';
 
 const navList = [
   {
@@ -52,15 +53,19 @@ const Navbar = () => {
         </ul>
       </div>
       <div className='flex gap-8 items-center justify-end'>
-        <Link href='#' className='font-semibold hover:underline'>
-          Sign In
-        </Link>
         <Link
           href='#'
-          className='text-primary px-7 py-3 border border-primary rounded-full hover:bg-primary hover:text-white transition'
+          className='font-semibold hover:underline'
+        >
+          Sign In
+        </Link>
+        <Button
+          type='link'
+          href='#'
+          variant='outline'
         >
           Sign Up
-        </Link>
+        </Button>
       </div>
     </nav>
   );

@@ -1,3 +1,4 @@
+import Button from '@/components/Button';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -21,7 +22,10 @@ const footerList = [
 
 const Hero = () => {
   return (
-    <section id='hero' className='max-w-6xl mx-auto px-2 mt-24'>
+    <section
+      id='hero'
+      className='max-w-6xl mx-auto px-2 mt-24'
+    >
       <div className='flex gap-10 items-center'>
         <div>
           <h1 className='text-5xl font-medium leading-[70px]'>
@@ -29,15 +33,17 @@ const Hero = () => {
             <span className='font-semibold'>LaslesVPN.</span>
           </h1>
           <p className='text-secondary leading-[30px] mt-5 mb-12'>
-            Provide a network for all your needs with ease and fun using
-            LaslesVPN discover interesting features from us.
+            Provide a network for all your needs with ease and fun using LaslesVPN
+            discover interesting features from us.
           </p>
-          <Link
+          <Button
+            type='link'
             href='#'
-            className='bg-primary text-white px-16 py-4 rounded-xl shadow-button hover:shadow-lg transition'
+            variant='primary'
+            className='px-16 py-4 rounded-xl'
           >
             Get Started
-          </Link>
+          </Button>
         </div>
         <div>
           <Image
@@ -63,12 +69,8 @@ const Hero = () => {
                 alt={list.img}
                 className='col-start-1 row-span-2'
               />
-              <span className='col-start-2 text-2xl font-bold'>
-                {list.amount}+
-              </span>
-              <span className='col-start-2 text-xl text-secondary'>
-                {list.name}
-              </span>
+              <span className='col-start-2 text-2xl font-bold'>{list.amount}+</span>
+              <span className='col-start-2 text-xl text-secondary'>{list.name}</span>
             </li>
           ))}
         </ul>
