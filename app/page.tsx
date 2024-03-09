@@ -3,6 +3,7 @@ import Hero from './sections/Hero';
 import Features from './sections/Features';
 import Pricing from './sections/Pricing';
 import Locations from './sections/Locations';
+import Testimonials from './sections/Testimonials';
 
 export default function Home() {
   return (
@@ -10,11 +11,12 @@ export default function Home() {
       <header>
         <Navbar />
       </header>
-      <main className=''>
+      <main>
         <Hero />
         <Features />
         <Pricing />
         <Locations />
+        <Testimonials />
       </main>
     </>
   );
