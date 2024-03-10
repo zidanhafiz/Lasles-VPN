@@ -9,7 +9,7 @@ type TestimoniCardProps = {
 
 const TestimoniCard = ({ name, address, img, testimoni }: TestimoniCardProps) => {
   return (
-    <div className='w-[400px] p-8 border-2 rounded-xl hover:border-primary hover:shadow-lg transition'>
+    <div className='w-[400px] p-8 border-2 rounded-xl shadow-md hover:border-primary hover:shadow-lg transition'>
       <div className='grid grid-cols-[auto,1fr,auto] items-center mb-2'>
         <Image
           src={img}

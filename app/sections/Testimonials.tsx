@@ -1,5 +1,4 @@
 import TestimoniCard from '@/components/TestimoniCard';
-import Image from 'next/image';
 
 const testimoniList = [
   {
@@ -26,7 +25,7 @@ const Testimonials = () => {
   return (
     <section
       id='testimonials'
-      className='mt-14 max-w-6xl mx-auto text-center'
+      className='mt-14 mb-44 max-w-6xl mx-auto text-center'
     >
       <h2 className='font-medium text-3xl leading-[50px] max-w-[320px] mx-auto'>
         Trusted by Thousands of Happy Customer
